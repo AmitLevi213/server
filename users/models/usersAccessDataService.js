@@ -1,62 +1,62 @@
 const DB = process.env.DB || "MONGODB";
 
-const find = async () => {
+const register = async normalizedUser => {
   if (DB === "MONGODB") {
     try {
+      normalizedUser._id = "123456";
       //   throw new Error("Opss... i did it again!");
-      return Promise.resolve([{ cards: "in mongodb" }]);
-    } catch (error) {
-      error.status = 404;
-      return Promise.reject(error);
-    }
-  }
-  return Promise.resolve("get cards not in mongodb");
-};
-
-const findMyCards = async userId => {
-  if (DB === "MONGODB") {
-    try {
-      //   throw new Error("Opss... i did it again!");
-      return Promise.resolve(`my cards: ${userId}`);
-    } catch (error) {
-      error.status = 404;
-      return Promise.reject(error);
-    }
-  }
-  return Promise.resolve("get card not in mongodb");
-};
-
-const findOne = async cardId => {
-  if (DB === "MONGODB") {
-    try {
-      //   throw new Error("Opss... i did it again!");
-      return Promise.resolve(`in findOne card no: ${cardId}`);
-    } catch (error) {
-      error.status = 404;
-      return Promise.reject(error);
-    }
-  }
-  return Promise.resolve("get card not in mongodb");
-};
-
-const create = async normalizedCard => {
-  if (DB === "MONGODB") {
-    try {
-      normalizedCard._id = "123456";
-      //   throw new Error("Opss... i did it again!");
-      return Promise.resolve(normalizedCard);
+      return Promise.resolve(normalizedUser);
     } catch (error) {
       error.status = 400;
       return Promise.reject(error);
     }
   }
-  return Promise.resolve("create card not in mongodb");
+  return Promise.resolve("register new user not in mongodb");
 };
 
-const update = async (cardId, normalizedCard) => {
+const login = async user => {
   if (DB === "MONGODB") {
     try {
-      return Promise.resolve(`in update card no. ${cardId}`);
+      //   throw new Error("Opss... i did it again!");
+      return Promise.resolve("in login");
+    } catch (error) {
+      error.status = 400;
+      return Promise.reject(error);
+    }
+  }
+  return Promise.resolve("login user not in mongodb");
+};
+
+const find = async () => {
+  if (DB === "MONGODB") {
+    try {
+      //   throw new Error("Opss... i did it again!");
+      return Promise.resolve([{ user: "David Yakin" }]);
+    } catch (error) {
+      error.status = 404;
+      return Promise.reject(error);
+    }
+  }
+  return Promise.resolve("get users not in mongodb");
+};
+
+const findOne = async userId => {
+  if (DB === "MONGODB") {
+    try {
+      //   throw new Error("Opss... i did it again!");
+      return Promise.resolve(`get user no: ${userId}`);
+    } catch (error) {
+      error.status = 404;
+      return Promise.reject(error);
+    }
+  }
+  return Promise.resolve("get user not in mongodb");
+};
+
+const update = async (userId, normalizedUser) => {
+  if (DB === "MONGODB") {
+    try {
+      return Promise.resolve(`user no. ${userId} updated!`);
     } catch (error) {
       error.status = 400;
       return Promise.reject(error);
@@ -65,10 +65,10 @@ const update = async (cardId, normalizedCard) => {
   return Promise.resolve("card update not in mongodb");
 };
 
-const like = async (cardId, userId) => {
+const changeIsBizStatus = async userId => {
   if (DB === "MONGODB") {
     try {
-      return Promise.resolve(`card no. ${cardId} liked!`);
+      return Promise.resolve(`user no. ${userId} change his business status!`);
     } catch (error) {
       error.status = 400;
       return Promise.reject(error);
@@ -77,10 +77,10 @@ const like = async (cardId, userId) => {
   return Promise.resolve("card liked not in mongodb");
 };
 
-const remove = async cardId => {
+const remove = async userId => {
   if (DB === "MONGODB") {
     try {
-      return Promise.resolve(`card no. ${cardId} deleted!`);
+      return Promise.resolve(`user no. ${userId} deleted!`);
     } catch (error) {
       error.status = 400;
       return Promise.reject(error);
@@ -89,10 +89,10 @@ const remove = async cardId => {
   return Promise.resolve("card deleted not in mongodb");
 };
 
+exports.register = register;
+exports.login = login;
 exports.find = find;
-exports.findMyCards = findMyCards;
 exports.findOne = findOne;
-exports.create = create;
 exports.update = update;
-exports.like = like;
+exports.changeIsBizStatus = changeIsBizStatus;
 exports.remove = remove;

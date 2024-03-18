@@ -1,22 +1,22 @@
+const chalk = require("chalk");
 const express = require("express");
-const router = require("./routes/router");
+const { handleError } = require("./utils/handleErrors");
 const app = express();
-const cors = require("./cors/cors");
-const logger = require("./logger/loggerAdapter");
+const router = require("./router/router");
+const cors = require("./middlewares/cors");
+const logger = require("./logger/loggerService");
 
-app.use(cors());
+app.use(cors);
 app.use(logger);
 app.use(express.json());
-app.use(express.text());
-app.use(
-  "/static",
-  express.static("./public", {
-    maxAge: 100 * 60 * 60 * 24 * 7,
-  })
-);
+app.use(express.static("./public"));
 app.use(router);
 
-const PORT = process.env.PORT || 8181;
-app.listen(PORT, () => {
-  console.log(`Listening on: http://localhost:${PORT}`);
+app.use((err, req, res, next) => {
+  handleError(res, 500, err.message);
 });
+
+const PORT = process.env.PORT || 8181;
+app.listen(PORT, () =>
+  console.log(chalk.magentaBright(`Listening on: http://localhost:${PORT}`))
+);
