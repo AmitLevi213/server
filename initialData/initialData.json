@@ -1,0 +1,188 @@
+{
+  "cards": [
+    {
+      "_id": "6601941691640a0b5122cdd5",
+      "title": "testnataly10",
+      "subtitle": "testnataly1000",
+      "description": "testnataly1000",
+      "phone": "050-0000000",
+      "email": "testnataly1000@mail.cpm",
+      "web": "www.testnataly1000.com",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1573847792062-9292df56ebb4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=m3wxmja3fdb8mhxzzwfyy2h8mjb8fhbpy3xlbnwwfhwwfhx8ma%3d%3d",
+        "alt": "business card image",
+        "_id": "660d2a74f9d3ea58f6d547bc"
+      },
+      "address": {
+        "state": "",
+        "country": "testnataly1000",
+        "city": "testnataly1000",
+        "street": "testnataly1000",
+        "houseNumber": 12,
+        "zip": 1212121,
+        "_id": "660d2a74f9d3ea58f6d547bd"
+      },
+      "bizNumber": 6616328,
+      "likes": [
+        "65fc06e7cb7aa60febcced58",
+        "65a697870f61e1c5f9effac5",
+        "66046fcdf9d3ea58f6d4cdec",
+        "65e87e2ddc809e75acddfc21"
+      ],
+      "user_id": "65f5597d5aabf0bc85194dce",
+      "createdAt": "2024-03-25T15:11:18.853Z",
+      "__v": 626
+    },
+    {
+      "_id": "660194ef91640a0b5122ce0a",
+      "title": "nataly",
+      "subtitle": "nataly",
+      "description": "nataly",
+      "phone": "050-0000000",
+      "email": "nataly@nataly.com",
+      "web": "www.test.com",
+      "image": {
+        "url": "https://plus.unsplash.com/premium_photo-1661861314373-342d917c30ff?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=m3wxmja3fdb8mhxzzwfyy2h8mxx8zgluyxnvdxj8zw58mhx8mhx8fda%3d",
+        "alt": "nataly",
+        "_id": "6601950bb1d4ce9ac54afaa7"
+      },
+      "address": {
+        "state": "nataly",
+        "country": "nataly",
+        "city": "nataly",
+        "street": "nataly",
+        "houseNumber": 12,
+        "zip": 1212121,
+        "_id": "6601950bb1d4ce9ac54afaa8"
+      },
+      "bizNumber": 3911470,
+      "likes": [
+        "65fc1706794d54d12ca949a7",
+        "657e0bed12eedb1d946a3c50",
+        "65fc06e7cb7aa60febcced58",
+        "653a608d1c7cd80c1fd27532",
+        "6615699600b4d006b4f96450"
+      ],
+      "user_id": "65f5597d5aabf0bc85194dce",
+      "createdAt": "2024-03-25T15:14:55.092Z",
+      "__v": 77
+    },
+    {
+      "_id": "6601b2f6b1d4ce9ac54b10ec",
+      "title": "css is the most fun part of front-end.",
+      "subtitle": "יאללה עברנו הלאה",
+      "description": "back-end! back-end! back-end! back-end! back-end! back-end! back-end! back-end! back-end! back-end! back-end! back-end! back-end!\ncss is the most fun part of front-end.",
+      "phone": "0541234505",
+      "email": "aviv@gmail.com",
+      "web": "https://he.wikipedia.org/wiki/mysql",
+      "image": {
+        "url": "https://www.simplilearn.com/ice9/free_resources_article_thumb/difference_between_sql_and_mysql.jpg",
+        "alt": "mysql",
+        "_id": "66021dfe91640a0b512344e7"
+      },
+      "address": {
+        "state": "useStateeeee",
+        "country": "country music",
+        "city": "sincity",
+        "street": "streetie",
+        "houseNumber": 12,
+        "zip": 5925416,
+        "_id": "66021dfe91640a0b512344e6"
+      },
+      "bizNumber": 3640162,
+      "likes": ["65fc06e7cb7aa60febcced58"],
+      "user_id": "65ff155a21d0fa495f387c33",
+      "createdAt": "2024-03-25T17:23:02.510Z",
+      "__v": 15
+    }
+  ],
+  "users": [
+    {
+      "_id": "65a823a10f61e1c5f9f000fd",
+      "name": {
+        "first": "yonatan",
+        "middle": "ertrt",
+        "last": "blabla",
+        "_id": "65e75d0a5aabf0bc8515a1f5"
+      },
+      "phone": "055964575",
+      "email": "lilalolilalo@email.com",
+      "image": {
+        "url": "https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png",
+        "alt": "business card image",
+        "_id": "65e75d0a5aabf0bc8515a1f6"
+      },
+      "address": {
+        "state": "not defined",
+        "country": "israel",
+        "city": "ramla",
+        "street": "ramlali",
+        "houseNumber": 12,
+        "zip": 0,
+        "_id": "65e75d0a5aabf0bc8515a1f7"
+      },
+      "isAdmin": false,
+      "isBusiness": true,
+      "classCode": "000",
+      "createdAt": "2024-01-17T18:59:45.074Z"
+    },
+    {
+      "_id": "65a9174b12eedb1d94710545",
+      "name": {
+        "first": "tal",
+        "middle": "",
+        "last": "kalush",
+        "_id": "65c4a1c4624794ceee4e5bf2"
+      },
+      "phone": "0547929000",
+      "email": "tal2@gmail.com",
+      "image": {
+        "url": "www.google.com",
+        "alt": "business card image",
+        "_id": "65c4a1c4624794ceee4e5bf3"
+      },
+      "address": {
+        "state": "kkk",
+        "country": "country",
+        "city": "city",
+        "street": "kkkkkk",
+        "houseNumber": 12,
+        "zip": 12,
+        "_id": "65c4a1c4624794ceee4e5bf4"
+      },
+      "isAdmin": false,
+      "isBusiness": true,
+      "classCode": "000",
+      "createdAt": "2024-01-18T12:19:23.246Z"
+    },
+    {
+      "_id": "65a9614112eedb1d94710670",
+      "name": {
+        "first": "eee",
+        "middle": "eee",
+        "last": "eee",
+        "_id": "65a9614112eedb1d94710671"
+      },
+      "phone": "052-6886333",
+      "email": "ediyadid123121@email.com",
+      "image": {
+        "url": "https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png",
+        "alt": "business card image",
+        "_id": "65a9614112eedb1d94710672"
+      },
+      "address": {
+        "state": "not defined",
+        "country": "israel",
+        "city": "israel",
+        "street": "israel",
+        "houseNumber": 0,
+        "zip": 0,
+        "_id": "65a9614112eedb1d94710673"
+      },
+      "isAdmin": false,
+      "isBusiness": true,
+      "classCode": "000",
+      "createdAt": "2024-01-18T17:34:57.925Z"
+    }
+  ]
+}
