@@ -5,11 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "set NODE_ENV=production&& node .",
-    "test": "node test.js",
-    "dev": "set NODE_ENV=development&& nodemon .",
-    "app": "npm i && nodemon .",
-    "express-ex": "nodemon ./express-ex/index.js",
-    "mongoose-ex": "nodemon ./examples/mongoose/app.js"
+    "dev": "set NODE_ENV=development&& nodemon ."
   },
   "author": "",
   "license": "ISC",
