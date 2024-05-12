@@ -123,7 +123,6 @@
       },
       "isAdmin": false,
       "isBusiness": true,
-      "classCode": "000",
       "createdAt": "2024-01-17T18:59:45.074Z"
     },
     {
@@ -181,7 +180,6 @@
       },
       "isAdmin": false,
       "isBusiness": true,
-      "classCode": "000",
       "createdAt": "2024-01-18T17:34:57.925Z"
     }
   ]
