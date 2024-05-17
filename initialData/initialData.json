@@ -178,7 +178,7 @@
         "zip": 0,
         "_id": "65a9614112eedb1d94710673"
       },
-      "isAdmin": false,
+      "isAdmin": true,
       "isBusiness": true,
       "createdAt": "2024-01-18T17:34:57.925Z"
     }

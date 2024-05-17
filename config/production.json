@@ -4,7 +4,7 @@
   "PORT": 9191,
   "TOKEN_GENERATOR": "jwt",
   "DB_NAME": "amit",
-  "DB_PASSWORD": "P7jr2dUnRiRcNBjR",
+  "DB_PASSWORD": "hze2Al51p1lhoE9h",
   "LOGGER": "morgan",
   "DB": "mongodb"
 }
