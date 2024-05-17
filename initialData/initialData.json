@@ -151,36 +151,7 @@
       },
       "isAdmin": false,
       "isBusiness": true,
-      "classCode": "000",
       "createdAt": "2024-01-18T12:19:23.246Z"
-    },
-    {
-      "_id": "65a9614112eedb1d94710670",
-      "name": {
-        "first": "eee",
-        "middle": "eee",
-        "last": "eee",
-        "_id": "65a9614112eedb1d94710671"
-      },
-      "phone": "052-6886333",
-      "email": "ediyadid123121@email.com",
-      "image": {
-        "url": "https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png",
-        "alt": "business card image",
-        "_id": "65a9614112eedb1d94710672"
-      },
-      "address": {
-        "state": "not defined",
-        "country": "israel",
-        "city": "israel",
-        "street": "israel",
-        "houseNumber": 0,
-        "zip": 0,
-        "_id": "65a9614112eedb1d94710673"
-      },
-      "isAdmin": true,
-      "isBusiness": true,
-      "createdAt": "2024-01-18T17:34:57.925Z"
     }
   ]
 }
