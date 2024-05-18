@@ -100,13 +100,13 @@
     {
       "_id": "65a823a10f61e1c5f9f000fd",
       "name": {
-        "first": "yonatan",
-        "middle": "ertrt",
-        "last": "blabla",
+        "first": "business",
+        "middle": "business",
+        "last": "business",
         "_id": "65e75d0a5aabf0bc8515a1f5"
       },
       "phone": "055964575",
-      "email": "lilalolilalo@email.com",
+      "email": "business@gmail.com",
       "image": {
         "url": "https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png",
         "alt": "business card image",
@@ -115,8 +115,8 @@
       "address": {
         "state": "not defined",
         "country": "israel",
-        "city": "ramla",
-        "street": "ramlali",
+        "city": "israel",
+        "street": "israel",
         "houseNumber": 12,
         "zip": 0,
         "_id": "65e75d0a5aabf0bc8515a1f7"
@@ -128,30 +128,54 @@
     {
       "_id": "65a9174b12eedb1d94710545",
       "name": {
-        "first": "tal",
-        "middle": "",
-        "last": "kalush",
+        "first": "regular",
+        "middle": "regular",
+        "last": "regular",
         "_id": "65c4a1c4624794ceee4e5bf2"
       },
       "phone": "0547929000",
-      "email": "tal2@gmail.com",
+      "email": "regular@gmail.com",
       "image": {
         "url": "www.google.com",
         "alt": "business card image",
         "_id": "65c4a1c4624794ceee4e5bf3"
       },
       "address": {
-        "state": "kkk",
-        "country": "country",
-        "city": "city",
-        "street": "kkkkkk",
+        "state": "",
+        "country": "israel",
+        "city": "israel",
+        "street": "israel",
         "houseNumber": 12,
         "zip": 12,
         "_id": "65c4a1c4624794ceee4e5bf4"
       },
       "isAdmin": false,
-      "isBusiness": true,
+      "isBusiness": false,
       "createdAt": "2024-01-18T12:19:23.246Z"
+    },
+
+    {
+      "name": {
+        "first": "admin",
+        "middle": "admin",
+        "last": "admin"
+      },
+      "phone": "0546879014",
+      "email": "admin@gmail.com",
+      "image": {
+        "url": "https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png",
+        "alt": "admin"
+      },
+      "address": {
+        "state": "il",
+        "country": "israel",
+        "city": "israel ",
+        "street": "israel",
+        "houseNumber": 1,
+        "zip": 1
+      },
+      "isAdmin": true,
+      "isBusiness": true
     }
   ]
 }
