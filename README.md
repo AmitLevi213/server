@@ -28,6 +28,9 @@ nodemon: Version 3.1.0
 
 I am adding here the list of users and their passwords to make it easier to use
 If you don't want to, you can sign up and build your user:
+```
 admin@gmail.com       Aa1234!
 bussiness@gmail.com   Aa1234!
 regular@gmail.com     Aa1234!
+
+```
