@@ -126,7 +126,7 @@
       "createdAt": "2024-01-17T18:59:45.074Z"
     },
     {
-      "_id": "65a9174b12eedb1d94710545",
+      "_id": "65a9174b12eedb1d94710547",
       "name": {
         "first": "regular",
         "middle": "regular",
@@ -138,16 +138,16 @@
       "image": {
         "url": "www.google.com",
         "alt": "business card image",
-        "_id": "65c4a1c4624794ceee4e5bf3"
+        "_id": "65c4a1c4624794ceee4e5bf1"
       },
       "address": {
-        "state": "",
+        "state": "not defined",
         "country": "israel",
         "city": "israel",
         "street": "israel",
         "houseNumber": 12,
         "zip": 12,
-        "_id": "65c4a1c4624794ceee4e5bf4"
+        "_id": "65c4a1c4624794ceee4e5bf5"
       },
       "isAdmin": false,
       "isBusiness": false,
