@@ -120,6 +120,28 @@ const deleteCard = async (cardId, user) => {
   }
   return Promise.resolve("card deleted not in mongodb");
 };
+const bizNumber = async (cardId, normalizedCard, newBizNumber) => {
+  if (DB === "MONGODB") {
+    try {
+      let card = await Card.findByIdAndUpdate(cardId, normalizedCard, {
+        new: true,
+      });
+      if (!card)
+        throw new Error("A card with this ID cannot be found in the database");
+      const cards = await Card.find({});
+      card.bizNumber = newBizNumber;
+      if (cards.find((cards) => cards.bizNumber === card.bizNumber))
+        throw new Error("please find a new uniq number");
+
+      card = await card.save();
+      return Promise.resolve(card);
+    } catch (error) {
+      error.status = 400;
+      return handleBadRequest("Mongoose", error);
+    }
+  }
+  return Promise.resolve("card updateCard not in mongodb");
+};
 
 exports.getCards = getCards;
 exports.getMyCards = getMyCards;
@@ -128,3 +150,4 @@ exports.createCard = createCard;
 exports.updateCard = updateCard;
 exports.likeCard = likeCard;
 exports.deleteCard = deleteCard;
+exports.bizNumber = bizNumber;

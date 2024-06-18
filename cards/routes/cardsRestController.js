@@ -9,6 +9,7 @@ const {
   updateCard,
   likeCard,
   deleteCard,
+  bizNumber: changeBizNubmer,
 } = require("../models/cardsAccessDataService");
 const validateCard = require("../validations/cardValidationService");
 const { auth } = require("../../auth/authService");
@@ -101,6 +102,25 @@ router.delete("/:id", auth, async (req, res) => {
     const cardId = req.params.id;
     const user = req.user;
     const card = await deleteCard(cardId, user);
+    return res.send(card);
+  } catch (error) {
+    return handleError(res, error.status || 500, error.message);
+  }
+});
+
+router.patch("/bizNumber/:id", auth, async (req, res) => {
+  try {
+    const cardId = req.params.id;
+    const { _id, isAdmin } = req.user;
+    const { bizNumber } = req.body;
+    if (!isAdmin)
+      return handleError(
+        res,
+        403,
+        "Authorization Error: You must be an admin type user to update a card"
+      );
+
+    const card = await changeBizNubmer(cardId, _id, bizNumber);
     return res.send(card);
   } catch (error) {
     return handleError(res, error.status || 500, error.message);

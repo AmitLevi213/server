@@ -7,6 +7,7 @@ const {
   updateCard,
   likeCard,
   deleteCard,
+  bizNumber,
 } = require("../models/cardsAccessDataService");
 const validateCard = require("../validations/cardValidationService");
 
@@ -79,6 +80,15 @@ const deleteCard = async (cardId) => {
   }
 };
 
+const bizNumber = async (cardId) => {
+  try {
+    const card = await bizNumber(cardId);
+    return Promise.resolve(card);
+  } catch (error) {
+    return Promise.reject(error);
+  }
+};
+
 exports.getCards = getCards;
 exports.getMyCards = getMyCards;
 exports.getCard = getCard;
@@ -86,3 +96,4 @@ exports.createCard = createCard;
 exports.updateCard = updateCard;
 exports.likeCard = likeCard;
 exports.deleteCard = deleteCard;
+exports.bizNumber = bizNumber;
