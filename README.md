@@ -20,6 +20,8 @@ This project is a Node.js API built with Express, enabling users to create and m
 - **Like Card**: Like a specific card.
 - **Patch Card Business Number**: Update the business number of a card.
 - **Delete Card**: Remove a card from the system.
+
+
 - ###Authentication
 The API uses JWT for authentication. Tokens include properties for user roles (isBusiness, isAdmin) and user ID. Authorization middleware ensures appropriate permissions for protected endpoints.
 In addition there's a cors policy that will allow only approved IPs to send requests, and a rate limiter that won't allow more than 100 requests per second
