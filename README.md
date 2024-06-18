@@ -1,6 +1,6 @@
 This project is a Node.js API built with Express, enabling users to create and manage business cards. It supports various user roles, including business users, admin users, and regular users. You can read the documentation here:
   [Link Text](https://documenter.getpostman.com/view/29937654/2sA3XSBgyh)
-###Features
+- ###Features
 ## Users:
 - **Get Users**: Retrieve a list of all users.
 - **Register User**: Register a new user in the system.
