@@ -44,15 +44,6 @@ npm run dev
 ```
 npm run start
 ```
-##CLIENT
-1.Install dependencies:
-```
-npm install
-```
-2.Run the client side:
-```
-npm start
-```
 #### I am adding here the list of users and their passwords to make it easier to use
 #### If you don't want to, you can sign up and build your user:
 ```
