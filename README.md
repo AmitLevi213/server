@@ -26,7 +26,7 @@ This project is a Node.js API built with Express, enabling users to create and m
 - The API uses JWT for authentication. Tokens include properties for user roles (isBusiness, isAdmin) and user ID. Authorization middleware ensures appropriate permissions for protected endpoints.
 In addition there's a cors policy that will allow only approved IPs to send requests, and a rate limiter that won't allow more than 100 requests per second
 There is also an option for logging in with google with google's auth library with oauth2. It requires the frontend to have a login with google button that sends a get request to /users/auth/google and redirects to the url provided from that endpoint. it then continues with google's authentication and confirmation, then it will redirect to an endpoint in the front end called /google-login with a token in the url params, take that token and login with it in the front end.
- 
+ ##SERVER
 ### Installation
 1.Clone the repo:
 ```
@@ -44,8 +44,15 @@ npm run dev
 ```
 npm run start
 ```
-
-
+##CLIENT
+1.Install dependencies:
+```
+npm install
+```
+2.Run the client side:
+```
+npm start
+```
 #### I am adding here the list of users and their passwords to make it easier to use
 #### If you don't want to, you can sign up and build your user:
 ```
